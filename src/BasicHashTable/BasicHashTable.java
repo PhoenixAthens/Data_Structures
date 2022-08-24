@@ -27,7 +27,7 @@ public class BasicHashTable<k,v> {
         int post=hash%values.length;
         if(post<0) post+= values.length;
         return post;
-        //This implementation frequently assigned of multiple values to the same packet, which
+        //This implementation frequently assigned multiple values to the same packet, which
         // is not efficient and resulted in data loss.
     }
     public String toString(){
